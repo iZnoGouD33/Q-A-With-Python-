@@ -36,7 +36,7 @@ def run_quiz(Questions):
         print(question['prompt']) 
         for option in question['options']:
             print(option)
-        answer = input('Enter your answer, (A, B, C or D, ):  ').capitalize()
+        answer = input('Enter your answer, (A, B, C or D, ):  ').upper()
         if answer == question['answer']:
             print("Correct!:\n")
             score+=5
@@ -47,7 +47,7 @@ def run_quiz(Questions):
     print("**********************************************************************")
     print(f"--   INCORRECT ANSWERS  -->  {wrong_answer}    --")
     print(f"--   CORRECT ANSWERS    -->  {right_answer}    --")
-    print(f"--   TOTAL SCORE        -->  {score}           --")
+    print(f"--   TOTAL SCORE        -->  {score}   --")
 
 
 run_quiz(Questions)
