@@ -44,5 +44,10 @@ def run_quiz(Questions):
         else:
             print("Wrong!!! The correct answer was, ",question['answer'])
             wrong_answer +=1
-    print(f"You Answered {right_answer} Questions right and {wrong_answer} Questions Wrong! Your Total Score is \n{score}")
+    print("**********************************************************************")
+    print(f"--   INCORRECT ANSWERS  -->  {wrong_answer}    --")
+    print(f"--   CORRECT ANSWERS    -->  {right_answer}    --")
+    print(f"--   TOTAL SCORE        -->  {score}           --")
+
+
 run_quiz(Questions)
